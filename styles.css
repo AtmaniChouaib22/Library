@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+.main {
+    display: grid;
+    grid-template-rows: 80px 50px 1fr;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.5rem;
+    border: 1px solid black;
+}
+.logo {
+    text-align: center;
+}
+
+.log-btn {
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+    text-align: center;
+}
+
+
+.open-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+.open-btn {
+    font-size: 2rem;
+    background: none;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+.lib {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+}

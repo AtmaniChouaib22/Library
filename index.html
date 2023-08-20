@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MyLibrary</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">MyLibrary</div>
+            <div class=".log-box"><button class="log-btn">Log in</button></div>
+        </div>
+
+        <div class="open-box">
+            <button class="open-btn" data-open>Add new</button>
+        </div>
+
+        <div class="lib">
+            
+            <dialog data-dialog>
+                <form action="/">
+                    <input type="text" name="Title" placeholder="Title" data-title required>
+                    <input type="text" name="Author" placeholder="Author" data-author >
+                    <input type="number" name="Pages" placeholder="Pages" data-pages required>
+                    <div><input type="checkbox" name="Read">Have you read it?</div>
+                    <div class="sub-box"><button class="sub-btn" data-add>Add to Library</button></div>
+                    <div class="cancel-box"><button class="cancel-btn" data-cancel formmethod="dialog">Cancel</button></div>
+                </form>
+            </dialog>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
